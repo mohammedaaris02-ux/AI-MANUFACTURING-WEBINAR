@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Jost', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', system-ui, sans-serif;
+    color: #0B1230;
+  }
+}
+
+@layer utilities {
+  /* Fluid typography */
+  .text-hero-title {
+    font-size: clamp(2.5rem, 5.5vw, 4.25rem);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .text-section-title {
+    font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .text-card-title {
+    font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+    line-height: 1.3;
+  }
+
+  /* Decorative angled clips matching the reference image hero and overview graphics */
+  .clip-hero-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
+  }
+
+  .clip-chamfer-br {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%);
+  }
+
+  .clip-chamfer-tl {
+    clip-path: polygon(24px 0, 100% 0, 100% 100%, 0 100%, 0 24px);
+  }
+
+  /* Glassmorphism surfaces */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-card-lavender {
+    background: rgba(248, 246, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Custom purple ribbon / wave glow */
+  .bg-radial-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.12) 0%, rgba(248, 246, 255, 0) 70%);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F6FF;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDD6FE;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A78BFA;
+}
