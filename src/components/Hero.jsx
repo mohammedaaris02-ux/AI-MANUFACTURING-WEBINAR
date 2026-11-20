@@ -84,10 +84,10 @@ export const Hero = () => {
               transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="font-heading font-extrabold text-navy-900 tracking-tight leading-[1.08] mb-5"
             >
-              <span className="block text-4xl sm:text-5xl lg:text-6xl text-navy-900">
+              <span className="block text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-navy-900 break-words">
                 {event.titleLine1}
               </span>
-              <span className="block text-4xl sm:text-5xl lg:text-6xl text-navy-900">
+              <span className="block text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-navy-900 break-words">
                 {event.titleLine2}
               </span>
             </motion.h1>
@@ -217,10 +217,10 @@ export const Hero = () => {
 
                     {/* Bottom HUD Analytics Strip */}
                     <div className="flex items-end justify-between">
-                      <div className="bg-navy-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-cyan-500/30 text-xs font-mono text-cyan-300 flex items-center gap-3">
+                      <div className="bg-navy-950/80 backdrop-blur-md px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg border border-cyan-500/30 text-[10px] sm:text-xs font-mono text-cyan-300 flex items-center gap-2 sm:gap-3">
                         <div className="flex items-center gap-1.5">
-                          <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                          <span>ANOMALY DETECTED: 0%</span>
+                          <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-400" />
+                          <span>ANOMALY: 0%</span>
                         </div>
                         <span className="text-cyan-500 hidden sm:inline">|</span>
                         <span className="text-slate-300 hidden sm:inline">CYCLE TIME: -18%</span>
@@ -235,7 +235,7 @@ export const Hero = () => {
                 initial={{ opacity: 0, y: 30, scale: 0.9 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.7, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute -bottom-8 -right-4 sm:-bottom-10 sm:-right-6 w-44 sm:w-56 md:w-64 aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group/sub z-20"
+                className="absolute -bottom-6 -right-2 xs:-bottom-8 xs:-right-4 sm:-bottom-10 sm:-right-6 w-36 xs:w-44 sm:w-56 md:w-64 aspect-[16/10] rounded-2xl overflow-hidden shadow-2xl border-2 sm:border-4 border-white bg-slate-900 group/sub z-20"
               >
                 <img
                   src={heroPlantSrc}

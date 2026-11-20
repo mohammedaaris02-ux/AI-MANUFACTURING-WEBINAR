@@ -76,7 +76,7 @@ export const SpeakerSection = () => {
         </div>
 
         {/* Bottom Bar: Provisional note & LinkedIn icon */}
-        <div className="mt-6 pt-4 border-t border-brand-50 flex items-center justify-between">
+        <div className="mt-6 pt-4 border-t border-brand-50 flex flex-col xs:flex-row items-center justify-between gap-3 text-center xs:text-left">
           <span className="text-[11px] text-secondary/70 italic">
             * Placeholder guest speaker profile for presentation demonstration
           </span>
@@ -85,7 +85,7 @@ export const SpeakerSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`${speaker.name} LinkedIn Profile`}
-            className="w-9 h-9 rounded-lg bg-[#0077B5]/10 hover:bg-[#0077B5] text-[#0077B5] hover:text-white flex items-center justify-center transition-all duration-200 group/link"
+            className="w-9 h-9 rounded-lg bg-[#0077B5]/10 hover:bg-[#0077B5] text-[#0077B5] hover:text-white flex items-center justify-center transition-all duration-200 group/link flex-shrink-0"
           >
             <Linkedin className="w-4 h-4" />
           </a>

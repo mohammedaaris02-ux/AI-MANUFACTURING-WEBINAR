@@ -78,7 +78,7 @@ export const Header = () => {
         </a>
 
         {/* Center Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-8 lg:gap-10">
+        <nav className="hidden md:flex items-center gap-4 lg:gap-8 xl:gap-10">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
             return (
@@ -86,7 +86,7 @@ export const Header = () => {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className={`relative text-sm lg:text-[15px] font-medium transition-colors duration-200 py-1 ${
+                className={`relative text-xs lg:text-[14px] xl:text-[15px] font-medium transition-colors duration-200 py-1 whitespace-nowrap ${
                   isActive ? 'text-brand-700 font-semibold' : 'text-secondary hover:text-navy-900'
                 }`}
               >
@@ -108,7 +108,7 @@ export const Header = () => {
           <a
             href="#register"
             onClick={(e) => handleNavClick(e, '#register')}
-            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg bg-navy-900 text-white text-sm font-heading font-semibold hover:bg-brand-700 transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 group focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 lg:px-5 lg:py-2.5 rounded-lg bg-navy-900 text-white text-xs lg:text-sm font-heading font-semibold hover:bg-brand-700 transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 group focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 whitespace-nowrap"
           >
             <span>Register Now</span>
             <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

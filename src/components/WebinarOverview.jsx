@@ -48,7 +48,7 @@ export const WebinarOverview = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Overlapping Asymmetric Image Collage */}
-          <div className="lg:col-span-6 relative pb-6 sm:pb-8 lg:pb-0">
+          <div className="lg:col-span-6 relative pb-8 sm:pb-10 lg:pb-0">
             <RevealOnScroll direction="right" duration={0.7}>
               <div className="relative mx-auto max-w-[520px] lg:max-w-none">
                 {/* Decorative angled background gradient card */}
@@ -92,7 +92,7 @@ export const WebinarOverview = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.25 }}
-                  className="absolute -bottom-6 -right-2 sm:-bottom-8 sm:-right-4 w-[58%] sm:w-[55%] aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group/arm cursor-default z-20"
+                  className="absolute -bottom-5 -right-1 xs:-bottom-6 xs:-right-2 sm:-bottom-8 sm:-right-4 w-[60%] sm:w-[55%] aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-2 sm:border-4 border-white bg-slate-900 group/arm cursor-default z-20"
                 >
                   <img
                     src={secondarySrc}
@@ -106,11 +106,11 @@ export const WebinarOverview = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/20 to-transparent pointer-events-none transition-opacity duration-300 group-hover/arm:opacity-90" />
                   
                   {/* Clean Caption Overlay matching design guidelines */}
-                  <div className="absolute bottom-3 left-3.5 right-3 text-white pointer-events-none transition-transform duration-300 group-hover/arm:translate-y-[-2px]">
-                    <p className="text-xs sm:text-sm font-heading font-bold text-white drop-shadow">
+                  <div className="absolute bottom-2.5 sm:bottom-3 left-2.5 sm:left-3.5 right-2 sm:right-3 text-white pointer-events-none transition-transform duration-300 group-hover/arm:translate-y-[-2px]">
+                    <p className="text-[11px] sm:text-sm font-heading font-bold text-white drop-shadow">
                       Autonomous Precision
                     </p>
-                    <p className="text-[10px] sm:text-[11px] text-purple-200 drop-shadow truncate">
+                    <p className="text-[9px] sm:text-[11px] text-purple-200 drop-shadow break-words">
                       AI-Guided Robotic Calibration
                     </p>
                   </div>

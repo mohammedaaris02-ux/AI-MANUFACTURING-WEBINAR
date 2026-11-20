@@ -18,9 +18,9 @@ export const WebinarAgenda = () => {
       </div>
 
       {/* Vertical Timeline */}
-      <div className="relative pl-2 sm:pl-4 flex-1">
-        {/* Continuous Vertical Purple Line */}
-        <div className="absolute top-3 bottom-5 left-[15px] sm:left-[23px] w-0.5 bg-gradient-to-b from-brand-600 via-brand-400 to-brand-200" />
+      <div className="relative pl-1 sm:pl-3 flex-1">
+        {/* Continuous Vertical Purple Line centered with circular nodes */}
+        <div className="absolute top-3.5 bottom-5 left-[13px] sm:left-[23px] w-0.5 bg-gradient-to-b from-brand-600 via-brand-400 to-brand-200" />
 
         <div className="space-y-6 sm:space-y-7">
           {agenda.map((item, index) => (
@@ -30,7 +30,7 @@ export const WebinarAgenda = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.45, delay: index * 0.08, ease: 'easeOut' }}
-              className="relative flex items-start gap-4 sm:gap-6 group"
+              className="relative flex items-start gap-3.5 sm:gap-6 group"
             >
               {/* Circular Timeline Node */}
               <div className="relative z-10 flex-shrink-0 mt-1">

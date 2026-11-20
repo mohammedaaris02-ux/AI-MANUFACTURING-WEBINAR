@@ -148,7 +148,7 @@ export const RegistrationSection = () => {
             </svg>
           </div>
 
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 p-6 sm:p-10 lg:p-14 items-center">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 p-4 sm:p-8 md:p-10 lg:p-14 items-center">
             
             {/* Left Column: Heading and Messaging */}
             <div className="lg:col-span-6 text-white space-y-5">
@@ -157,16 +157,16 @@ export const RegistrationSection = () => {
                 <span>Limited Free Virtual Passes</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-black tracking-tight leading-tight text-white drop-shadow-sm">
+              <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-heading font-black tracking-tight leading-tight text-white drop-shadow-sm break-words">
                 {registration.heading}
               </h2>
 
-              <p className="text-base sm:text-lg text-purple-100/90 leading-relaxed max-w-lg">
+              <p className="text-sm sm:text-lg text-purple-100/90 leading-relaxed max-w-lg">
                 {registration.subheading}
               </p>
 
               {/* Event Benefits Mini List */}
-              <div className="pt-2 space-y-2.5 text-sm text-purple-200 font-medium">
+              <div className="pt-2 space-y-2.5 text-xs sm:text-sm text-purple-200 font-medium">
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                   <span>Immediate access confirmation & calendar invite</span>
@@ -182,7 +182,7 @@ export const RegistrationSection = () => {
               </div>
 
               {/* Mode Switcher Pill */}
-              <div className="pt-4 flex items-center gap-3 text-xs">
+              <div className="pt-4 flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs">
                 <span className="text-purple-300/80">Submission Mode:</span>
                 <button
                   type="button"
@@ -198,7 +198,7 @@ export const RegistrationSection = () => {
 
             {/* Right Column: White Registration Form Card */}
             <div className="lg:col-span-6">
-              <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-9 shadow-2xl border border-surface-border relative">
+              <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-7 lg:p-9 shadow-2xl border border-surface-border relative">
                 
                 <div className="mb-6">
                   <h3 className="text-xl sm:text-2xl font-heading font-extrabold text-navy-900">
